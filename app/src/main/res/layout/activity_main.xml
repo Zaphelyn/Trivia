@@ -26,9 +26,9 @@
         android:layout_width="348dp"
         android:layout_height="190dp"
         android:padding="10dp"
+        app:cardBackgroundColor="@color/colorAccent"
         app:cardCornerRadius="6dp"
         app:cardElevation="6dp"
-        app:cardBackgroundColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +44,8 @@
                 android:id="@+id/text_view_questions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:textColor="@color/textColor"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,12 +88,14 @@
         android:id="@+id/text_view_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
         android:fontFamily="@font/chewy"
         android:textColor="@color/textColor"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/card_view_questions"
-        app:layout_constraintEnd_toEndOf="@+id/text_view_attempts_remaining"
-        app:layout_constraintTop_toTopOf="@+id/text_view_high_score"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_attempts_remaining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        app:layout_constraintVertical_bias="0.523"
         tools:text="Questions: 0/100" />
 
     <TextView
@@ -101,21 +103,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/chewy"
         android:text="Score: 0"
         android:textColor="@color/textColor"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/text_view_high_score"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
 
     <TextView
         android:id="@+id/text_view_high_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/chewy"
         android:text="High Score: 0"
         android:textColor="@color/textColor"
@@ -127,14 +127,13 @@
         android:id="@+id/text_view_attempts_remaining"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/chewy"
         android:text="Attempts remaining: 3"
         android:textColor="@color/textColor"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_counter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+        app:layout_constraintBottom_toTopOf="@+id/card_view_questions"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_counter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
