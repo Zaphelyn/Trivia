@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B0FF</color>
+    <color name="colorPrimaryDark">#2FFF00</color>
+    <color name="colorAccent">#E6E2E4</color>
+
+
+    <!-- Colors for day/light mode -->
+    <color name="backgroundColor">#FCFCFC</color>
+    <color name="textColor">#000000</color>
+
+
+</resources>

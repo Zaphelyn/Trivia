@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_dark_mode"
+        android:checkable="true"
+        android:title="Dark mode" />
+    <item
+        android:id="@+id/menu_item_reset_leaderboard"
+        android:title="Reset leader board" />
+</menu>
